@@ -14,6 +14,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="RESULT DETAILS"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Student Profile"
             android:textSize="30sp"
             android:textStyle="bold"
@@ -30,13 +35,37 @@
             android:inputType="textPersonName"/>
 
         <EditText
+            android:id="@+id/collegeInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:hint="Enter college name"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/branchInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Branch"
+            android:padding="12dp"
+            android:backgroundTint="#263B65"/>
+
+        <EditText
             android:id="@+id/courseInput"
             android:layout_width="match_parent"
-            android:layout_height="55dp"
+            android:layout_height="wrap_content"
             android:hint="Enter Your Course"
             android:padding="12dp"
-            android:layout_marginTop="15dp"
-            android:backgroundTint="#263A65"/>
+            android:backgroundTint="#263B65"/>
+
+        <EditText
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Result (CGPA)"
+            android:padding="12dp"
+            android:textColor="#263A65"/>
+
 
         <Button
             android:id="@+id/submitButton"
@@ -47,14 +76,6 @@
             android:layout_marginTop="25dp"
             android:backgroundTint="#263A65"/>
 
-        <TextView
-            android:id="@+id/resultText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:textColor="#263A65"
-            android:gravity="center"
-            android:layout_marginTop="30dp"/>
 
     </LinearLayout>
 

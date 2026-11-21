@@ -14,6 +14,7 @@ import com.example.myapplication.databinding.FragmentFirstBinding;
 public class FirstFragment extends Fragment {
 
     private FragmentFirstBinding binding;
+    private String Branch;
 
     @Override
     public View onCreateView(
@@ -35,17 +36,19 @@ public class FirstFragment extends Fragment {
             String college = binding.courseInput.getText().toString().trim();
             String course = binding.submitButton.getText().toString().trim();
 
-            if (name.isEmpty() || college.isEmpty() || course.isEmpty()) {
+            String branch = "";
+            if (name.isEmpty() || college.isEmpty() || branch.isEmpty() || course.isEmpty()) {
 
                 Toast.makeText(requireContext(),
                         "Please fill all details",
                         Toast.LENGTH_SHORT).show();
 
             } else {
-
+                
                 Toast.makeText(requireContext(),
                         "Profile Saved!\nName: " + name
                                 + "\nCollege: " + college
+                                +"\nBranch:  " +Branch
                                 + "\nCourse: " + course,
                         Toast.LENGTH_LONG).show();
             }
